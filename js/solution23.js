@@ -6,6 +6,7 @@ Consider an array/list of sheep where some sheep may be missing from their place
 //The parameter will be an array with either true or false, with true representing present
 //Need to figure out how many true statements there are.
 //.filter() is an array method that creates a new array and filter out how many true statements there are
+//since there is only a true or false statement boolean will satisfy the if statement for any truthy value
 //.length will take count of the true statements and return the number
 
 
