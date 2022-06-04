@@ -4,7 +4,7 @@ Given a random non-negative number, you have to return the digits of this number
 
 
 //Turn numbers into strings
-//Split into strings into an array
+//Use .split() method to turn the strings into an array
 //.map() will create a new array
 //.reverse() will reverse the elements in the array
 
