@@ -17,6 +17,14 @@ function moveZeros(array) {
     return([...other,...zeros])
 };
 
+//Another way I did this solution was 
+
+function moveZeros(arr) {
+    let zeros = arr.filter((num) => num === 0)
+    let newArr = arr.filter((c) => c !== 0)
+    return ([...newArr,...zeros])
+};
+
 /*Test Cases   
 moveZeros([false,1,0,1,2,0,1,3,"a"]) => Output: [false,1,1,2,1,3,"a",0,0]
 moveZeros([1,2,0,1,0,1,0,3,0,1]) => Output: [1, 2, 1, 1, 3, 1, 0, 0, 0, 0]
