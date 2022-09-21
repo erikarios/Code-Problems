@@ -11,8 +11,8 @@ Given a two-dimensional array of integers, return the flattened version of the a
 
 function flattenAndSort(arr) {
     let flatArray = [].concat(...arr).sort((a,b) => a - b)
-    console.log(flatArray);
-  };
+    return flatArray;
+};
 
 /*Test Cases   
 flattenAndSort([[3, 2, 1], [7, 9, 8], [6, 4, 5]]) => [1, 2, 3, 4, 5, 6, 7, 8, 9]
