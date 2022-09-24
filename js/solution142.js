@@ -6,20 +6,11 @@ Task - Given an array of positive integers (the weights of the people), return a
 
 // The parameter is an array with positive integers. The array will never be empty
 // We want to return a new array compromised of two integers, the combined total of team 1 and the combine total of team 2. Team one will be compromised of the first, third, and so one elements from the given parameter. Team 2 will be compromised of the second, forth, and so on elements from the given parameter.
-
-
-// We need to figure out which elements goes into which team. We can check the index and use modulus to figure out if the index is even or odd. 
-
-// We need to combine the totals of team 1 and team 2, which we can do using reduce. 
-
-// We need to combine the two totals into single array and return the array.
-
-
 // For example rowWeights([13, 27, 49])  ==>  return [62, 27]. The first element 62 is the total weight of team 1, and the second element 27 is the total weight of team 2.
+// We need to figure out which elements goes into which team. We can check the index and use modulus to figure out if the index is even or odd. 
+// We can add the totals for each team each time we iterate through the array
+// We can return the totals 
 
-// reduce() method will be used to add together the vaules and return the total
-// acc is accumulator, the total value
-// curr is the vaule of the current element being processed in the array
 
 function rowWeights(arr) {
     let team1 = 0;
@@ -41,5 +32,3 @@ rowWeights([80]), => [80,0]
 rowWeights([0]) => [0,0])
 rowWeights([100,51,50,100]) => [150,151])
 */
-
-rowWeights([13, 27, 49])
