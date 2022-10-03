@@ -2,11 +2,13 @@
 
 In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number. */
 
-// There are two parameters. The first is an array containing integers and the other is a single number which represents how many integers we return
-// We need to return only the even numbers from the end of the array
-// We need to iterate through the array and filter out the even numbers
-// We can figure out which numbers are even by using the modulus operator
-// We can use the slice method to slice from the end of the array to the parameter that we were given
+// The parameters is a string containing numbers which are separated by space
+// We need to return the highest and lowest interger from the string
+// We can use the .split() method to turn the string into an array and then iterate through the array
+// The Math.min() function returns the smallest value of the numbers 
+// The Math.max() function returns the biggest value of the numbers
+// Spread syntax allows an iterable such as an array expression to be expanded in places where zero or more arguments (for function calls) or elements (for array literal) are expected
+
 
 function highAndLow(numbers){
     numbers = numbers.split(' ');
@@ -14,6 +16,6 @@ function highAndLow(numbers){
 };
 
 /*Test Cases   
-highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4") => [4, 6, 8]
-highAndLow("1 2 3") => [-8, 26]
+highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4") => "42 -9"
+highAndLow("1 2 3") => "3 1"
 */
