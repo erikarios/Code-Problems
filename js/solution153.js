@@ -37,8 +37,7 @@ Complete the function that accepts a string parameter, and reverses each word in
 //     [ 'y', 'z', 'a', 'l' ],
 //     [ '.', 'g', 'o', 'd' ]
 //   ]
-// The .join() method needs to be used once more to the replaced characters with the last four unchanged characters
-
+// The .join() method needs to be again to concatenate the reversed elements
 //  [
 //     'ehT',   'kciuq',
 //     'nworb', 'xof',
@@ -46,11 +45,8 @@ Complete the function that accepts a string parameter, and reverses each word in
 //     'eht',   'yzal',
 //     '.god'
 //   ]
-
-
+//Last we want to concatenate all of the elements and return a string which we can do with the join method which would output: 
 //ehT kciuq nworb xof spmuj revo eht yzal .god
-
-
 
  function reverseWords(str) {
      return str.split(' ').map(word => word.split('').reverse().join('')).join(' ')
