@@ -25,5 +25,3 @@ bump("nnn_n__n_n___nnnnn___n__nnn__") => "Woohoo!"
 bump("_nnnnnnn_n__n______nn__nn_nnn") => "Car Dead"
 bump("______n___n_") => "Woohoo!"
 */
-
-console.log(bump("_nnnnnnn_n__n______nn__nn_nnn"))
