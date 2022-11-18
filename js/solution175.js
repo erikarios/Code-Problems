@@ -6,6 +6,7 @@ Given a string of words (x), you need to return an array of the words, sorted al
 // The parameter is a string of words
 // We want to return an array in which we sort each indivdual word in order by the last letter of each word
 // We can do so using the .sort() method, in ascending order, a - b
+// Using charCodeAt will return an integer and we can use the length property to look at the last letter in each word. The sort method will sort the words
 
 function last(x){
     return x.split(' ').sort((a,b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1))
