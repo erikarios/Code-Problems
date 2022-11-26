@@ -25,6 +25,20 @@ function absentVowel(str){
     }
 };
 
+function absentVowel(str){
+    let vowels = {
+        'a': 0,
+        'e': 1,
+        'i': 2,
+        'o': 3,
+        'u': 4,
+      };
+
+      for(let i in vowels) {
+        if(!str.includes(i)) return vowels[i];
+      }
+};
+
 /*Test Cases   
 absentVowel("John Doe hs seven red pples under his bsket") => 0
 absentVowel("Bb Smith sent us six neatly arranged range bicycles") => 3
