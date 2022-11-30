@@ -1,10 +1,10 @@
-/* Filter the number
+/* Gift Code
 
 Write a function called sortGiftCode/sort_gift_code/SortGiftCode that accepts a string containing up to 26 unique alphabetical characters, and returns a string containing the same characters in alphabetical order.
 */
 
 // The parameter is a string, no whitespace 
-// We need to count each occurrence of each letter in the string and return in an object
+// We need to return the string back in alphabetical order
 // Use the split method to turn the string into an array
 // Use the sort method to put the letters in order
 // Use join to turn the array back into a string and return
