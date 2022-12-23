@@ -56,4 +56,27 @@ const memoizedClosure = () => {
   console.log('Task 3 calculated value:', memoClosureTimes10(9));	// calculated
   console.log('Task 3 cached value:', memoClosureTimes10(10));	// cached
   
+// Task 4: Make your memo function generic and accept the times10 function as a callback rather than defining the n * 10 logic inside the if/else or pulling it in from the global scope.
+
+const memoize = (cb) => {
+    let cache = {};
+      return (n, ...args) => { 
+          if (n in cache) {
+              //console.log('Fetching from cache:', n);
+              return cache[n];
+          }
+          else {
+              //console.log('Calculating result');
+              let result = cb(n, ...args); 
+              cache[n] = result;
+              return result;
+          }
+      };
+  };
+  
+  // returned function from memoizedAdd
+  const memoizedTimes10 = memoize(times10);
+  console.log('Task 4 calculated value:', memoizedTimes10(9));	// calculated
+  console.log('Task 4 cached value:', memoizedTimes10(9));	// cached
+  
   
