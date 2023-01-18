@@ -29,6 +29,24 @@ function containsDupes(arr){
   return false
 };
 
+// Set constructor lets you create Set objects that store unique values of any type, whether primitive values or object references
+// has() method returns a boolean indicating whether an element with the specified value exists in a Set object or not
+// add() method inserts a new element with a specified value in to a Set object, if there isn't an element with the same value already in the Set
+// The complexity is O(N) 
+// The space requirement is O(N)
+
+  function containsDupes(nums) {
+    let data = new Set();
+    for (let x of nums) {
+        if (data.has(x)) {
+            return true;
+        }
+        data.add(x);
+    }
+    return false;
+};
+
+
 /*Test Cases   
 containsDuplicate([1,2,3,1]) => true
 containsDuplicate([1,2,3,4]) => false
