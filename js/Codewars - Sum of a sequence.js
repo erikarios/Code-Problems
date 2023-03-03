@@ -20,6 +20,23 @@ const sequenceSum = (begin, end, step) => {
     return result
 };
 
+
+// const sequenceSum = (begin, end, step) => end < begin ? 0 : begin + sequenceSum(begin + step, end, step);
+
+// Used recursion to calculate the sum
+// The base case for the recursion is when end is less than begin, in which case the function returns 0
+// For example input: 2,6,2 
+// Output: 12 
+// Begin is 2, end is 6, and step is 2 
+// Since end is not less than begin the function calculates the sum
+// begin (2) is added to the result of sequenceSum(2 + 2, 6, 2), which is the sum of the remaining sequence
+// sequenceSum(4, 6, 2) is called recursively
+// begin is now 4, end is still 6, and step is still 2
+// Again, begin is added to the result of sequenceSum(4 + 2, 6, 2), which is sequenceSum(6, 6, 2)
+// This process continues until begin becomes 8, which is greater than end 6
+// Then the result is returned 
+
+
 /*Test Cases  
 Example 1:
     Input: 2,2,2
